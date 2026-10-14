@@ -1,0 +1,68 @@
+/* Morrow beginner stylesheet. Try changing these colors to personalize the site. */
+:root { --cream:#f8f7f1; --white:#fffefa; --dark:#292a24; --green:#dce8d1; --peach:#f2d9d1; --blue:#dce5f1; --yellow:#f4e7b9; --gray:#77786f; --border:#e7e5dc; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--cream); color:var(--dark); font-family:Arial,Helvetica,sans-serif; }
+header { background:var(--cream); border-bottom:1px solid var(--border); min-height:72px; padding:15px 7%; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+.logo { font-size:25px; font-weight:bold; text-decoration:none; color:var(--dark); letter-spacing:-1px; }
+.logo span { color:#8ca779; }
+nav { display:flex; gap:23px; flex-wrap:wrap; }
+nav a { color:var(--gray); font-size:13px; text-decoration:none; }
+nav a:hover, nav a.active { color:var(--dark); text-decoration:underline; text-underline-offset:6px; }
+.join-button, button, .main-button { background:var(--dark); color:white; border:0; border-radius:6px; padding:11px 15px; font-size:12px; cursor:pointer; text-decoration:none; }
+.join-button { white-space:nowrap; }
+button:hover, .join-button:hover, .main-button:hover { background:#4a4b40; }
+.container { max-width:850px; width:86%; margin:45px auto 65px; }
+.welcome { margin:25px 0 30px; }
+.small-title { font-size:10px; color:var(--gray); letter-spacing:1.5px; }
+h1 { font-size:43px; line-height:1.12; letter-spacing:-1.5px; margin:15px 0; }
+h1 em { font-family:Georgia,serif; font-weight:normal; }
+.subtext { color:var(--gray); font-size:13px; line-height:1.7; }
+.write-post, .post, .form-page, .profile-box, .profile-info, .edit-box, .about-note { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:20px; }
+.write-post h2, .feed h2, .profile-info h2, .about-note h2 { font-size:16px; margin-top:0; }
+textarea, input { width:100%; padding:12px; border:1px solid var(--border); border-radius:6px; background:white; font-family:inherit; font-size:13px; margin:7px 0 12px; }
+textarea { min-height:85px; resize:vertical; }
+.post-bottom { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+.post-bottom span { color:var(--gray); font-size:10px; }
+.feed { margin-top:35px; }
+.feed h2 { margin-bottom:15px; }
+.post { margin-bottom:13px; }
+.person { display:flex; align-items:center; gap:10px; }
+.person strong, .person small { display:block; }
+.person strong { font-size:12px; }
+.person small { font-size:10px; color:var(--gray); margin-top:3px; }
+.avatar { width:36px; height:36px; display:grid; place-items:center; border-radius:50%; font-family:Georgia,serif; }
+.green { background:var(--green); } .peach { background:var(--peach); } .blue { background:var(--blue); }
+.post>p { font-size:13px; line-height:1.8; margin:17px 0; overflow-wrap:anywhere; }
+.like-button { background:transparent; color:var(--gray); border:1px solid var(--border); padding:7px 10px; }
+.like-button:hover, .like-button.liked { color:#a64f4f; background:#f8eeee; }
+footer { text-align:center; color:var(--gray); border-top:1px solid var(--border); padding:20px; font-size:11px; }
+.form-page { max-width:430px; width:88%; margin:65px auto 80px; padding:28px; }
+.form-page h1 { font-size:33px; }
+.form-page label, .edit-box label { font-size:12px; display:block; margin-top:12px; }
+.form-page button { width:100%; margin-top:5px; }
+.form-message { color:#66834e; font-size:12px; line-height:1.6; }
+.switch-form { font-size:12px; color:var(--gray); text-align:center; margin-top:22px; }
+.switch-form a { color:var(--dark); }
+.profile-banner { background:var(--green); min-height:150px; border-radius:12px; padding:20px; display:flex; align-items:end; color:#64745a; font-size:10px; letter-spacing:1px; }
+.profile-box { text-align:center; margin-top:0; border-radius:0 0 12px 12px; }
+.profile-avatar { background:var(--peach); width:70px; height:70px; display:grid; place-items:center; border-radius:50%; font:30px Georgia,serif; margin:-55px auto 12px; border:4px solid var(--white); position:relative; }
+.profile-box h1 { font-size:28px; margin-bottom:3px; }
+.username { color:var(--gray); font-size:11px; }
+.profile-box p:not(.username) { font-size:13px; }
+.profile-info { margin-top:20px; }
+.profile-info p, .about-note p { color:var(--gray); font-size:13px; line-height:1.8; }
+.main-button { display:inline-block; margin-top:7px; }
+.edit-box { margin-top:15px; }
+.hidden { display:none; }
+.topic-grid { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+.topic-card { border-radius:12px; padding:23px; min-height:190px; }
+.topic-card>span { font-size:27px; }
+.topic-card h2 { font-family:Georgia,serif; font-weight:normal; font-size:23px; margin:20px 0 7px; }
+.topic-card p, .about-cards p { font-size:12px; line-height:1.8; color:#65665d; }
+.topic-green { background:var(--green); } .topic-peach { background:var(--peach); } .topic-blue { background:var(--blue); } .topic-yellow { background:var(--yellow); }
+.about-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:30px 0; }
+.about-cards article { border-top:1px solid #d8d6cb; padding:17px 10px; }
+.about-cards article>span { font-size:10px; color:#8ca779; }
+.about-cards h2 { font-family:Georgia,serif; font-weight:normal; font-size:22px; }
+.about-note { background:#edf0e7; }
+@media(max-width:650px) { header { padding:14px 5%; flex-wrap:wrap; } nav { order:3; width:100%; justify-content:center; gap:18px; padding-top:7px; } .container { width:90%; margin-top:30px; } h1 { font-size:36px; } .topic-grid, .about-cards { grid-template-columns:1fr; } .form-page { margin-top:35px; padding:22px; } }
