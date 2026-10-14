@@ -1,6 +1,6 @@
 # Morrow — Social Media Website
 
-Morrow is a simple multi-page social media prototype made with HTML, CSS.
+Morrow is a simple multi-page social media prototype made with HTML, CSS, JS.
 
 ## Pages
 - `index.html` — Home feed and create-post box
